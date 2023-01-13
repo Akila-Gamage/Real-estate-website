@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Hogar - Search</title>
+
+    <!-- =============== JQuery ================ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- ============== JQuery UI ================ -->
+    <script src="./assets/JQuery/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./assets/JQuery/jquery-ui.css">
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/JQuery.js"></script>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            
+    <!--=============== SLICK CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+    <!--=============== BOOTSTRAP CSS ===============-->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!--=============== SLICK JS ===============-->
+    <script src="./assets/js/slick.js"></script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row row-1">
+            <div class="col-sm-12">
+                <!--==================== MAIN NAME ====================-->
+                <h1 class="prop__page-title">
+                    El Hogar <i class='bx bxs-home-alt-2 home-icon'></i>
+                </h1>
+            </div>
+        </div>
+        <div class="row search-title">
+            <div class="col-sm-12">
+                <h1 class="search__page-title">
+                    Find Your Dream Home &nbsp;<i class='bx bx-search-alt'></i>
+                </h1>
+            </div>
+        </div>
+        <div class="row button-container">
+            <div class="col-sm-12 col-md-6">
+                <!--==================== BACK BUTTON ====================-->
+                <a href="./index.html" class="button back__button"><i class='bx bx-arrow-back' undefined ></i> Back</a>
+            </div>
+        </div>
+        <div class="row gx-5 main-container">
+            <div class="col">
+                <div class="search-container">
+                    <div class="inline">
+                        <div class="min-beds">
+                            <p>Min Bedrooms: </p>
+                            <input id="spinner" value="3">
+                        </div>
+                        <div class="max-beds">
+                            <p>Max Bedrooms: </p>
+                            <input id="spinner2" value="3">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                    <div class="type">
+                        <p>Property Type: </p>
+                        <select name="property" id="property">
+                            <option value="Apartment">Apartment</option>
+                            <option value="House">House</option>
+                            <option value="Any" selected>Any</option>
+                        </select>
+                    </div>
+                </div>
+
+                    <div class="Time">
+                        <p>Time Added</p>
+                        <select name="time" id="time">
+                            <option value="January", "February", "March", "April"> January - April (2014)</option>
+                            <option value="May", "June", "July", "August"> May - August (2014)</option>
+                            <option value="September", "October", "November", "December"> September - December (2014)</option>
+                            <option value="Anytime" selected>Anytime</option>
+                        </select>
+                    </div>
+
+                    <div class="Price">
+                        <p class="box">
+                            <p>Price Range</p>
+                            <input type="text" id="amount" readonly class="goldSliderText">
+                        </p>
+                        <div id="slider-range"></div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <button id="Search" class="button">Search</button>
+                    </div>
+            </div>
+        </div>
+            <div class="col output-container">
+                <div id="Placeholder"></div>
+            </div>
+            <div class="col">
+                <div class="favourite-container">
+                    <button class="view__Favourites button">View Favourites</button>
+                    <button class="clear__Favourites button">Clear all favourites</button>
+                
+                    <div id="Placeholder2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="./assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== FONTAWESOME ===============-->
+        <script src="https://kit.fontawesome.com/9351e0d043.js" crossorigin="anonymous"></script>
+
+        <!--=============== BOOTSTRAP JS ===============-->
+        <script src="./assets/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>
