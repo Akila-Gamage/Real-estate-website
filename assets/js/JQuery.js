@@ -149,7 +149,7 @@ var data = {
             "price":649900,
             "tenure":"Freehold",
             "picture":"./assets/img/prop7/prop7-1.webp",
-            "url":"./properties/property1.html",
+            "url":"./properties/property7.html",
             "added": {
                 "month":"January",
                 "day":12,

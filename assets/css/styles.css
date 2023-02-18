@@ -1490,7 +1490,19 @@ background: var(--first-color);
 #map p{
   padding-left: 45px;
 }
-
+#map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+#map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
   /*=============== FORM  ===============*/
 .registration-form{
   position: absolute;
@@ -1532,7 +1544,11 @@ background: var(--first-color);
   font-size: 0.7rem;
   text-align: justify;
 }
-
+@media screen and (max-width: 760px){
+  .registration-form{
+    display: none;
+  }
+}
   /*=============== FOOTER  ===============*/
 .footer__container a{
   text-decoration: none;
